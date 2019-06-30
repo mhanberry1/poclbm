@@ -19,12 +19,6 @@ import json
 import collections
 import pyopencl
 
-from _winreg import (
-    CloseKey, OpenKey, QueryValueEx, SetValueEx,
-    HKEY_CURRENT_USER, HKEY_LOCAL_MACHINE,
-    KEY_ALL_ACCESS, KEY_READ, REG_EXPAND_SZ, REG_SZ
-)
-
 """
 Begin startup processes
 """
@@ -33,6 +27,11 @@ ON_POSIX = 'posix' in sys.builtin_module_names
 
 try:
     import win32api, win32con, win32process
+    from _winreg import (
+        CloseKey, OpenKey, QueryValueEx, SetValueEx,
+        HKEY_CURRENT_USER, HKEY_LOCAL_MACHINE,
+        KEY_ALL_ACCESS, KEY_READ, REG_EXPAND_SZ, REG_SZ
+    )
 except ImportError:
     pass
 

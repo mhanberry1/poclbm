@@ -15,7 +15,7 @@ Execute the `guiminer.py` script by running `python guiminer.py`
 
 ## Installing
 
-# Ubuntu/Debian
+### Ubuntu/Debian
 Run the following in a terminal:
 ```
 sudo apt update

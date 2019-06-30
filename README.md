@@ -13,7 +13,7 @@ A fork of GUIminer that is geared toward Litecoin mining.
 
 Execute the `guiminer.py` script by running `python guiminer.py`
 
-## Installing
+## Installing Dependencies
 
 ### Ubuntu/Debian
 Run the following in a terminal:
